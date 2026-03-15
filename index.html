@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Cones &mdash; Melt into Happiness</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo-wrap">
+          <img
+            src="images/logo.png"
+            alt="Sweet Cones logo"
+            class="logo"
+            onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex';"
+          />
+          <div id="logo-fallback" class="logo-fallback" aria-hidden="true">
+            🍦
+          </div>
+        </div>
+        <div class="brand">
+          <h1 class="brand-name">Sweet Cones</h1>
+          <p class="slogan">Melt into Happiness</p>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="container">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#find-us">Find Us</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Welcome banner">
+      <div class="hero-overlay">
+        <h2>San Francisco's Sweetest Stop</h2>
+        <p>Handcrafted ice cream served fresh from our truck — every single day.</p>
+        <a href="#find-us" class="btn">Find Our Truck</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Sweet Cones</h2>
+        <p>
+          Welcome to Sweet Cones — San Francisco's favourite ice cream truck! We roll through
+          the city serving hand-scooped, small-batch ice cream made with the finest local
+          ingredients. Whether you're craving a classic vanilla cone or an adventurous lavender
+          honey scoop, we've got something to make you smile.
+        </p>
+        <p>
+          Our slogan says it all: <strong>Melt into Happiness</strong>. Stop by, grab a cone,
+          and let the magic begin.
+        </p>
+      </div>
+    </section>
+
+    <!-- Menu / Food Gallery -->
+    <section id="menu" class="section menu">
+      <div class="container">
+        <h2>Our Ice Cream</h2>
+        <p class="section-subtitle">Fresh flavours to make every day sweeter</p>
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=400&h=300&fit=crop"
+              alt="Colourful scoops of ice cream in a waffle cone"
+              loading="lazy"
+            />
+            <figcaption>Signature Waffle Cone</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=400&h=300&fit=crop"
+              alt="Vanilla soft serve ice cream swirl"
+              loading="lazy"
+            />
+            <figcaption>Classic Soft Serve</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1567206563114-c179706b3f80?w=400&h=300&fit=crop"
+              alt="Strawberry and chocolate ice cream scoops"
+              loading="lazy"
+            />
+            <figcaption>Double Scoop Delight</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1488900128323-21503983a07e?w=400&h=300&fit=crop"
+              alt="Ice cream sundae with toppings"
+              loading="lazy"
+            />
+            <figcaption>Sundae Bliss</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1576506295286-5cda18df43e7?w=400&h=300&fit=crop"
+              alt="Chocolate dipped ice cream bar"
+              loading="lazy"
+            />
+            <figcaption>Chocolate Dipped Bar</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=400&h=300&fit=crop"
+              alt="Rainbow sherbet scoops"
+              loading="lazy"
+            />
+            <figcaption>Rainbow Sherbet</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Find Us -->
+    <section id="find-us" class="section find-us">
+      <div class="container">
+        <h2>Find Our Truck</h2>
+        <div class="info-cards">
+          <div class="info-card">
+            <div class="info-icon" aria-hidden="true">📍</div>
+            <h3>Location</h3>
+            <p>Roaming San Francisco, CA</p>
+            <p>Look for our pink truck near popular parks, beaches, and city landmarks!</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon" aria-hidden="true">🕐</div>
+            <h3>Hours</h3>
+            <p><strong>Every Day</strong></p>
+            <p>6:00 AM &ndash; 10:00 PM</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon" aria-hidden="true">📱</div>
+            <h3>Follow Us</h3>
+            <p>Track our truck's real-time location on social media for daily updates!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recipes -->
+    <section id="recipes" class="section recipes">
+      <div class="container">
+        <h2>Ice Cream Recipes</h2>
+        <p class="section-subtitle">Love ice cream? Try making it at home with our favourite recipes!</p>
+        <ul class="recipe-list">
+          <li>
+            <a
+              href="https://www.allrecipes.com/recipe/76937/old-fashioned-vanilla-ice-cream/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🍦 Old-Fashioned Vanilla Ice Cream
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.allrecipes.com/recipe/10762/chocolate-ice-cream/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🍫 Rich Chocolate Ice Cream
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.allrecipes.com/recipe/22284/strawberry-ice-cream/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🍓 Fresh Strawberry Ice Cream
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.allrecipes.com/recipe/21305/no-cook-peach-ice-cream/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🍑 No-Cook Peach Ice Cream
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.allrecipes.com/recipe/231700/waffle-cones/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🧇 Homemade Waffle Cones
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Sweet Cones &bull; San Francisco, CA &bull; 6:00 AM &ndash; 10:00 PM Daily</p>
+        <p class="footer-slogan">Melt into Happiness 🍦</p>
+      </div>
+    </footer>
+  </body>
+</html>
