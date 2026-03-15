@@ -141,8 +141,10 @@ body {
 /* ---------- Hero ---------- */
 .hero {
   background-image:
-    linear-gradient(rgba(247, 168, 196, 0.55), rgba(255, 218, 185, 0.65)),
-    url('https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=1400&fit=crop');
+    radial-gradient(circle at 18% 22%, rgba(255, 166, 0, 0.28) 0 10px, transparent 11px),
+    radial-gradient(circle at 78% 30%, rgba(255, 105, 180, 0.20) 0 8px, transparent 9px),
+    radial-gradient(circle at 32% 78%, rgba(125, 211, 252, 0.22) 0 9px, transparent 10px),
+    linear-gradient(120deg, rgba(255, 248, 235, 0.95), rgba(255, 236, 204, 0.92));
   background-size: cover;
   background-position: center;
   min-height: 480px;
