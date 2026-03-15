@@ -1,0 +1,363 @@
+/* ===========================
+   Sweet Cones — Main Stylesheet
+   =========================== */
+
+/* ---------- Reset & Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3d2c2c;
+  background-color: #fff9f5;
+  line-height: 1.6;
+}
+
+/* ---------- Colour Variables ---------- */
+:root {
+  --pink:       #f7a8c4;
+  --pink-dark:  #e87fa8;
+  --peach:      #ffdab9;
+  --cream:      #fff5e6;
+  --brown:      #7b4f3a;
+  --text-dark:  #3d2c2c;
+  --text-light: #fff9f5;
+}
+
+/* ---------- Utility ---------- */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--pink-dark);
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--brown);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Logo */
+.logo-wrap {
+  flex-shrink: 0;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+  display: block;
+}
+
+.logo-fallback {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  font-size: 3rem;
+  background: linear-gradient(135deg, var(--pink), var(--peach));
+  border-radius: 50%;
+}
+
+/* Brand Name */
+.brand-name {
+  font-size: 2rem;
+  color: var(--pink-dark);
+  letter-spacing: 1px;
+}
+
+.slogan {
+  font-size: 1rem;
+  color: var(--brown);
+  font-style: italic;
+}
+
+/* Navigation */
+.main-nav {
+  background-color: var(--pink-dark);
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0;
+}
+
+.main-nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.65rem 1.25rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  background-color: var(--brown);
+  outline: none;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background-image:
+    linear-gradient(rgba(247, 168, 196, 0.55), rgba(255, 218, 185, 0.65)),
+    url('https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=1400&fit=crop');
+  background-size: cover;
+  background-position: center;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  padding: 2rem;
+}
+
+.hero-overlay h2 {
+  font-size: 2.8rem;
+  color: var(--brown);
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.7);
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+}
+
+/* ---------- Sections (shared) ---------- */
+.section {
+  padding: 4rem 0;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: var(--pink-dark);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--brown);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+/* ---------- About ---------- */
+.about {
+  background-color: var(--cream);
+}
+
+.about p {
+  max-width: 750px;
+  margin: 0 auto 1rem;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+/* ---------- Menu / Gallery ---------- */
+.menu {
+  background-color: #fff;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.gallery-item {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #fff;
+}
+
+.gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item figcaption {
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  color: var(--brown);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* ---------- Find Us ---------- */
+.find-us {
+  background-color: var(--peach);
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.info-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-3px);
+}
+
+.info-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.info-card h3 {
+  color: var(--pink-dark);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-card p {
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+/* ---------- Recipes ---------- */
+.recipes {
+  background-color: var(--cream);
+}
+
+.recipe-list {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.recipe-list a {
+  display: block;
+  background-color: #fff;
+  color: var(--brown);
+  text-decoration: none;
+  padding: 0.9rem 1.25rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid var(--pink-dark);
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.recipe-list a:hover,
+.recipe-list a:focus {
+  background-color: var(--pink);
+  color: var(--brown);
+  border-color: var(--brown);
+  transform: translateX(4px);
+  outline: none;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background-color: var(--pink-dark);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.site-footer p {
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.footer-slogan {
+  font-style: italic;
+  font-size: 1rem !important;
+  font-weight: 600;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .brand-name {
+    font-size: 1.5rem;
+  }
+
+  .hero-overlay h2 {
+    font-size: 2rem;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .info-cards {
+    grid-template-columns: 1fr;
+  }
+}
